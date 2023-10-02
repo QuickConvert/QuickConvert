@@ -26,7 +26,15 @@ struct TabView: View {
                 }
                 .onAppear { selectedTab = 1 }
                 .tag(1)
+            
+            SearchView()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                }
+                .onAppear { selectedTab = 2 }
+                .tag(2)
         }
+        .tint(.black) // Changes the color of the selected TabBar Item
     }
 }
 
