@@ -130,6 +130,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		386E011F2ACBD73100A73C53 /* Convertion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Convertion;
+			sourceTree = "<group>";
+		};
 		387D2A482AC9FFD8001EDC53 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +186,7 @@
 		38BA9CA92ACB384400B0013D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				386E011F2ACBD73100A73C53 /* Convertion */,
 				38BA9CB62ACB3EBB00B0013D /* Search */,
 				38BA9CB32ACB3C3C00B0013D /* Favourite */,
 				38BA9CB02ACB3AC900B0013D /* Categories */,
