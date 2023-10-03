@@ -10,9 +10,7 @@ import SwiftUI
 struct CategoryView: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Hello, World!")
-            }
+            Text("Hi")
             .navigationTitle("Categories")
             .navigationBarTitleDisplayMode(.inline)
         }
