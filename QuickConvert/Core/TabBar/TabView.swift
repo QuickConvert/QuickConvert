@@ -35,7 +35,7 @@ struct TabView: View {
                 .onAppear { selectedTab = 2 }
                 .tag(2)
         }
-        .tint(.black) // Changes the color of the selected TabBar Item
+        .tint(.black) // changes the TabBar Buttons color to black
     }
 }
 

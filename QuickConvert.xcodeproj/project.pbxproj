@@ -135,6 +135,9 @@
 		386E011F2ACBD73100A73C53 /* Convertion */ = {
 			isa = PBXGroup;
 			children = (
+				38CC82342ACCA74000199798 /* Advanced */,
+				38CC82332ACCA73200199798 /* Basic */,
+				38CC82322ACCA71B00199798 /* ScanForConvertion */,
 			);
 			path = Convertion;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 		38BA9CA92ACB384400B0013D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				38CC82312ACCA59C00199798 /* Components */,
 				386E011F2ACBD73100A73C53 /* Convertion */,
 				38BA9CB62ACB3EBB00B0013D /* Search */,
 				38BA9CB32ACB3C3C00B0013D /* Favourite */,
@@ -254,6 +258,34 @@
 				386E011B2ACBD5AA00A73C53 /* View */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		38CC82312ACCA59C00199798 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		38CC82322ACCA71B00199798 /* ScanForConvertion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScanForConvertion;
+			sourceTree = "<group>";
+		};
+		38CC82332ACCA73200199798 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		38CC82342ACCA74000199798 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Advanced;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
