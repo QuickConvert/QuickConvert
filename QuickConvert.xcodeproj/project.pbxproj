@@ -137,7 +137,6 @@
 				38BA9CA82ACB383F00B0013D /* App */,
 				38BA9CA92ACB384400B0013D /* Core */,
 				38BA9CAA2ACB384C00B0013D /* Ressources */,
-				387D2A582AC9FFD9001EDC53 /* Assets.xcassets */,
 				387D2A5A2AC9FFD9001EDC53 /* Preview Content */,
 			);
 			path = QuickConvert;
@@ -174,6 +173,7 @@
 		38BA9CAA2ACB384C00B0013D /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				387D2A582AC9FFD9001EDC53 /* Assets.xcassets */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
