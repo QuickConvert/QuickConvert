@@ -21,7 +21,8 @@ struct TabView: View {
             
             FavouriteView()
                 .tabItem {
-                    Image(systemName: selectedTab == 1 ? "heart.fill" : "heart")
+                    Image(systemName: selectedTab == 1 ? "heart.fill" : "heart") // maybe change icon to "star.fill" or "star"
+//                    Image(systemName: selectedTab == 1 ? "star.fill" : "star")
                         .environment(\.symbolVariants, selectedTab == 1 ? .fill : .none)
                 }
                 .onAppear { selectedTab = 1 }
