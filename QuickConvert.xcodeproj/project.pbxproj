@@ -137,9 +137,17 @@
 			path = Convertion;
 			sourceTree = "<group>";
 		};
+		386E01202ACBD89B00A73C53 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		387D2A482AC9FFD8001EDC53 = {
 			isa = PBXGroup;
 			children = (
+				386E01202ACBD89B00A73C53 /* Configs */,
 				387D2A532AC9FFD8001EDC53 /* QuickConvert */,
 				381B5EA12ACB40F500AE0E19 /* QuickConvertWidgets */,
 				381B5E9C2ACB40F500AE0E19 /* Frameworks */,
