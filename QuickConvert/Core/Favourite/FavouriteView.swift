@@ -9,7 +9,15 @@ import SwiftUI
 
 struct FavouriteView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Text("Hello,World!")
+                Image(systemName: "glob")
+                    .foregroundColor(.blue)
+            }
+            .navigationTitle("Favourite")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
