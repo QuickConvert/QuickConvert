@@ -10,15 +10,15 @@
 				<key>location-parameters</key>
 				<dict>
 					<key>EndingColumnNumber</key>
-					<string>17</string>
+					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>51</string>
+					<string>49</string>
 					<key>StartingColumnNumber</key>
-					<string>12</string>
+					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>40</string>
+					<string>48</string>
 					<key>Timestamp</key>
-					<string>718093177.771004</string>
+					<string>718097231.452567</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -34,26 +34,16 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string>Text("Tab 2")
-//                .tabItem {
+				<string>//            Text("Tab 2")
+</string>
+				<key>leading</key>
+				<string>            // MARK: - Sheet View above TabBar
+            /// A sheet view above the TabBar
+</string>
+				<key>trailing</key>
+				<string>//                .tabItem {
 //                    Image(systemName: "2.circle")
 //                    Text("Tab 2")
-//                }
-//                .onTapGesture {
-//                    // When the second tab is tapped, present a sheet
-//                    isSheetPresented.toggle()
-//                }
-//                .sheet(isPresented: $isSheetPresented) {
-//                    // Content of the sheet
-//                }</string>
-				<key>leading</key>
-				<string>            
-            // MARK: Sheet Tab
-//            </string>
-				<key>trailing</key>
-				<string>
-            
-        }
 </string>
 			</dict>
 			<key>title</key>

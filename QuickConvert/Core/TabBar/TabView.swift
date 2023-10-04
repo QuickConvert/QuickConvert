@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct TabView: View {
+    /// States that keeps track of the sheetView and TabBar:
+    /// **         - selectedTab                                            **
+    /// **         - isSheetPresented: Bool                        **
     @State private var selectedTab = 0
-//    @State private var isSheetPresented = false
+    @State private var isSheetPresented = false
     
     var body: some View {
-        Text("Hi")
-        TabView(selection: $selectedTab) {
+        /// Creates a TabBar with tree options:
+        /// - Categories -> 0
+        /// - Favourites -> 1
+        /// - Search       -> 2
+        /// Each state is tracked by the defined state `$selectedTab`
+        TabView(selection: $selectedTab ) {
             CategoryView()
                 .tabItem {
                     Image(systemName: "bullet")
@@ -37,7 +44,8 @@ struct TabView: View {
                 .onAppear { selectedTab = 2 }
                 .tag(2)
             
-            // MARK: Sheet Tab
+            // MARK: - Sheet View above TabBar
+            /// A sheet view above the TabBar
 //            Text("Tab 2")
 //                .tabItem {
 //                    Image(systemName: "2.circle")
