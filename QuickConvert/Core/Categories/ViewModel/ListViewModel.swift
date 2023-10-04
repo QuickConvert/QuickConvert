@@ -78,18 +78,18 @@ enum ListViewModel_Advanced: Int, CaseIterable, Identifiable {
     
     var imageName: String {
         switch self {
-        case .trigonometry: return "triangle.fill"; #warning("missing Symbol")
-        case .electrical: return "power"
+        case .trigonometry: return "triangle.fill"
+        case .electrical: return "power" // "powercord.fill"
         case .energy: return "bolt.fill" // "bolt"
-        case .force: return "hammer"
+        case .force: return "hammer.fill"
         case .currency: return "dollarsign.square"
         case .fuel_consumption: return "fuelpump.fill"
         case .speed: return "gauge.with.dots.needle.bottom.0percent"
         case .frequency: return "waveform.path.ecg" // waveform.path.ecg.rectangle
         case .surface_angle: return "angle"
         case .pressure: return "barometer"
-        case .data_transfer_rate: return ""; #warning("missing Symbol")
-        case .data: return ""; #warning("missing Symbol")
+        case .data_transfer_rate: return "wifi"
+        case .data: return "doc.zipper"
         }
     }
     var id: Int { return self.rawValue }

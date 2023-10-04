@@ -62,16 +62,6 @@ struct QuickConvertTabView: View {
 //                    // Content of the sheet
 //                }
         }
-        // MARK: - Toolbar
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    print("Settings")
-                } label: {
-                    Image("gearshape.fill")
-                }
-            }
-        }
         .tint(.black) // changes the TabBar Buttons color to black
     }
 }
