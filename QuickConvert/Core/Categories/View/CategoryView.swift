@@ -66,6 +66,12 @@ struct CategoryView: View {
                             Text(option.title)
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
+                            
+                            // MARK: Custom Chevron button
+                            Spacer()
+                            
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.gray)
                         }
                         .onTapGesture(perform: {
                             developerIsPresented.toggle()
