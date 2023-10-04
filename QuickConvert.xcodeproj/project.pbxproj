@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38143E542ACDD53C00F6FC71 /* ConvertionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38143E532ACDD53C00F6FC71 /* ConvertionFormView.swift */; };
+		38143E562ACDD55900F6FC71 /* ConvertionFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38143E552ACDD55900F6FC71 /* ConvertionFormViewModel.swift */; };
+		38143E592ACDDB0800F6FC71 /* DeveloperListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38143E582ACDDB0800F6FC71 /* DeveloperListViewModel.swift */; };
+		38143E5B2ACDDB6700F6FC71 /* DeveloperCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38143E5A2ACDDB6700F6FC71 /* DeveloperCategoryView.swift */; };
 		381B5E9E2ACB40F500AE0E19 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381B5E9D2ACB40F500AE0E19 /* WidgetKit.framework */; };
 		381B5EA02ACB40F500AE0E19 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381B5E9F2ACB40F500AE0E19 /* SwiftUI.framework */; };
 		381B5EA32ACB40F500AE0E19 /* QuickConvertWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B5EA22ACB40F500AE0E19 /* QuickConvertWidgetsBundle.swift */; };
@@ -56,6 +60,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		38143E532ACDD53C00F6FC71 /* ConvertionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertionFormView.swift; sourceTree = "<group>"; };
+		38143E552ACDD55900F6FC71 /* ConvertionFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertionFormViewModel.swift; sourceTree = "<group>"; };
+		38143E582ACDDB0800F6FC71 /* DeveloperListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperListViewModel.swift; sourceTree = "<group>"; };
+		38143E5A2ACDDB6700F6FC71 /* DeveloperCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCategoryView.swift; sourceTree = "<group>"; };
 		381B5E9B2ACB40F400AE0E19 /* QuickConvertWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickConvertWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		381B5E9D2ACB40F500AE0E19 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		381B5E9F2ACB40F500AE0E19 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -296,6 +304,7 @@
 		38CC823D2ACCAA6D00199798 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				38143E552ACDD55900F6FC71 /* ConvertionFormViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -303,6 +312,7 @@
 		38CC823E2ACCAA7200199798 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				38143E532ACDD53C00F6FC71 /* ConvertionFormView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				38CC82412ACCAACA00199798 /* ListViewModel.swift */,
+				38143E582ACDDB0800F6FC71 /* DeveloperListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -319,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				38BA9CB12ACB3B0700B0013D /* CategoryView.swift */,
+				38143E5A2ACDDB6700F6FC71 /* DeveloperCategoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -445,9 +457,13 @@
 				38BA9CB52ACB3C5500B0013D /* FavouriteView.swift in Sources */,
 				389E90A92ACD39E900979392 /* SheetView.swift in Sources */,
 				38CC82422ACCAACA00199798 /* ListViewModel.swift in Sources */,
+				38143E562ACDD55900F6FC71 /* ConvertionFormViewModel.swift in Sources */,
+				38143E592ACDDB0800F6FC71 /* DeveloperListViewModel.swift in Sources */,
 				38BA9CB22ACB3B0700B0013D /* CategoryView.swift in Sources */,
 				38BA9CB82ACB3ED700B0013D /* SearchView.swift in Sources */,
+				38143E5B2ACDDB6700F6FC71 /* DeveloperCategoryView.swift in Sources */,
 				387D2A552AC9FFD8001EDC53 /* QuickConvertApp.swift in Sources */,
+				38143E542ACDD53C00F6FC71 /* ConvertionFormView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

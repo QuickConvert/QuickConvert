@@ -16,6 +16,7 @@ import SwiftUI
 ///
 /// The List Items are defined in the ListViewModel as an enum called `ListViewModel`.
 struct CategoryView: View {
+    @State private var developerIsPresented = false
     var body: some View {
         NavigationStack {
             List {
@@ -45,6 +46,32 @@ struct CategoryView: View {
                             
                             Text(option.title)
                                 .font(.subheadline)
+                        }
+                    }
+                }
+                Section("Developer") {
+                    ForEach(ListViewModel_Icon_Programmer.allCases) { option in
+                        HStack {
+                            ZStack {
+                                Color.black
+                                    .frame(width: 30, height: 30)
+                                    .cornerRadius(10)
+                                Image(systemName: option.imageName)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 20, height: 20)
+                                    .foregroundColor(.white)
+                            }
+                        
+                            Text(option.title)
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                        }
+                        .onTapGesture(perform: {
+                            developerIsPresented.toggle()
+                        })
+                        .navigationDestination(isPresented: $developerIsPresented) {
+                            DeveloperCategoryView()
                         }
                     }
                 }

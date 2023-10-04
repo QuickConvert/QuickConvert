@@ -94,3 +94,21 @@ enum ListViewModel_Advanced: Int, CaseIterable, Identifiable {
     }
     var id: Int { return self.rawValue }
 }
+
+// MARK: - Programmer List Icon
+enum ListViewModel_Icon_Programmer: Int, CaseIterable, Identifiable {
+    case developer
+    
+    var title: String {
+        switch self {
+        case .developer: "Developer conversions"
+        }
+    }
+    
+    var imageName: String {
+        switch self {
+        case .developer: "hammer.fill"
+        }
+    }
+    var id: Int { return self.rawValue }
+}
