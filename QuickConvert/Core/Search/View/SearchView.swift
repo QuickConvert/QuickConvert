@@ -14,9 +14,9 @@ struct SearchView: View {
     var body: some View {
         NavigationStack {
             LazyVStack {
-                
+                Text("Hi")
             // Search func
-            //.searchable(text: $searchText, prompt: "Search")
+            .searchable(text: $searchText, prompt: "Search")
             }
             .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.inline)

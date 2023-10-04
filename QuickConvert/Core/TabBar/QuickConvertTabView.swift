@@ -23,7 +23,8 @@ struct QuickConvertTabView: View {
         TabView(selection: $selectedTab ) {
             CategoryView()
                 .tabItem {
-                    Image(systemName: "bullet")
+                    Image(systemName: "list.bullet")
+                    Text("Categories")
                 }
                 .onAppear { selectedTab = 0 }
                 .tag(0)
@@ -33,6 +34,7 @@ struct QuickConvertTabView: View {
                     Image(systemName: selectedTab == 1 ? "heart.fill" : "heart")
 //                    Image(systemName: selectedTab == 1 ? "star.fill" : "star")
                         .environment(\.symbolVariants, selectedTab == 1 ? .fill : .none)
+                    Text("Favourite")
                 }
                 .onAppear { selectedTab = 1 }
                 .tag(1)
@@ -40,6 +42,7 @@ struct QuickConvertTabView: View {
             SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
+                    Text("Search")
                 }
                 .onAppear { selectedTab = 2 }
                 .tag(2)
