@@ -1,5 +1,5 @@
 //
-//  TabView.swift
+//  QuickConvertTabView.swift
 //  QuickConvert
 //
 //  Created by Nevio Hirani on 02.10.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabView: View {
+struct QuickConvertTabView: View {
     /// States that keeps track of the sheetView and TabBar:
     /// **         - selectedTab                                            **
     /// **         - isSheetPresented: Bool                        **
@@ -65,5 +65,5 @@ struct TabView: View {
 }
 
 #Preview {
-    TabView()
+    QuickConvertTabView()
 }
