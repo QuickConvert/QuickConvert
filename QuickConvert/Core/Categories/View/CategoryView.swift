@@ -24,6 +24,7 @@ struct CategoryView: View {
                         HStack {
                             Image(systemName: option.imageName)
                                 .resizable()
+                                .scaledToFit()
                                 .frame(width: 24, height: 24)
                                 .foregroundColor(.black)
                             
@@ -38,6 +39,7 @@ struct CategoryView: View {
                         HStack {
                             Image(systemName: option.imageName)
                                 .resizable()
+                                .scaledToFit()
                                 .frame(width: 24, height: 24)
                                 .foregroundColor(.black)
                             
