@@ -72,6 +72,18 @@ struct CategoryView: View {
                             .tint(Color(.systemGray2))
                             
                         }
+                        
+                        // MARK: - ConvertionView
+                        /// If the user tap's on the icon the ConvertionView will be displayed
+                        ///
+                        /// TODO:
+                        /// - Decide to use either .sheet or a new view
+                        .onTapGesture(perform: {
+                            convertionView.toggle()
+                        })
+                        .navigationDestination(isPresented: $convertionView) { // FIXME: Change the `.navigationDestination` to `.sheet` if needed
+                            ConvertionFormView()
+                        }
                     }
                 }
                 
