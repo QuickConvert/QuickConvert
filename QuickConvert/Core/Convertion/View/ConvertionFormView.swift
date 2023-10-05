@@ -22,12 +22,14 @@ struct ConvertionFormView: View {
     
     var body: some View {
         NavigationStack {
+            // MARK: - ConvertionView
             VStack {
                 // MARK: Input
                 TextField("Value", text: $inputValue)
                     .modifier(IGTextFieldModifier())
             }
             
+            // MARK: - Actions
             List {
                 Section("Actions") {
                     ForEach(ConvertionListViewModel.allCases, id: \.self) { option in
