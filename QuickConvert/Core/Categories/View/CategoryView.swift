@@ -40,12 +40,13 @@ struct CategoryView: View {
                             
                             Spacer()
                             
-                            Button {
-                                isFavourite.toggle()
-                            } label: {
-                                Image(systemName: isFavourite ? "heart.fill" : "heart")
-                            }
-                            .tint(.black)
+                            // FIXME: Feature func
+//                            Button {
+//                                isFavourite.toggle()
+//                            } label: {
+//                                Image(systemName: isFavourite ? "heart.fill" : "heart")
+//                            }
+//                            .tint(.black)
                             
                         }
                         
@@ -141,7 +142,7 @@ struct CategoryView: View {
             // MARK: - Toolbar
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                        Image(systemName: "gear")
+                        Image(systemName: "gearshape")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 25)

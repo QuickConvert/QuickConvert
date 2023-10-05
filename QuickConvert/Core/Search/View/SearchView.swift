@@ -14,7 +14,7 @@ struct SearchView: View {
     var body: some View {
         NavigationStack {
             LazyVStack {
-                Text("Hi")
+                ContentUnavailableView("We're sorry but this feature isn't finished yet", systemImage: "eye.slash.fill")
             // Search func
             .searchable(text: $searchText, prompt: "Search")
             }

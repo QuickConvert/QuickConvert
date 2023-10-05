@@ -10,12 +10,9 @@ import SwiftUI
 struct FavouriteView: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Hello,World!")
-                Image(systemName: "glob")
-                    .foregroundColor(.blue)
-            }
-            .navigationTitle("Favourite")
+            ContentUnavailableView("We're sorry but this feature isn't finished yet", systemImage: "eye.slash.fill")
+            
+//            .navigationTitle("Favourite")
             .navigationBarTitleDisplayMode(.large)
         }
     }
