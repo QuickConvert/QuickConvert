@@ -17,7 +17,7 @@ import SwiftUI
 struct ConvertionFormView: View {
     @State private var inputValue = ""
     @State private var outputValue = ""
-    @State private var selectedUnit = "0"
+    @State private var selectedUnit = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
