@@ -24,6 +24,7 @@ struct CategoryView: View {
     var body: some View {
         NavigationStack {
             List {
+                #warning("Fix id's of the items")
                 Section("Basic operations") {
                     ForEach(ListViewModel.allCases, id: \.self) { option in
                         HStack {
@@ -38,26 +39,28 @@ struct CategoryView: View {
                             
                             Spacer()
                             
-                            // TODO: Fix issue
-                            #warning("BUG: If you mark an item with favourite all items are selected")
-                            if isFavourite == true {
-                                Image(systemName: "heart.fill")
-                            } else {
-                                Image(systemName: "")
+                            Button {
+                                isFavourite.toggle()
+                            } label: {
+                                Image(systemName: isFavourite ? "heart.fill" : "heart")
                             }
+                            .tint(.black)
+                            
                         }
+                        
+                        // MARK: - Swipe Actions
                         .swipeActions(edge: .trailing) {
                             /// Allows using swipe actions:
                             /// Favourite/unfavourite: right edge
                             /// ...
-                            Button {
-                                isFavourite.toggle()
-                                print("DEBUG: added \(option.title) to your favourites")
-                                print("\(option.title) is a favourite: \(isFavourite)")
-                            } label: {
-                                Label("DEBUG: Favourite", systemImage: "heart")
-                            }
-                            .tint(.red)
+//                            Button {
+//                                isFavourite.toggle()
+//                                print("DEBUG: added \(option.title) to your favourites")
+//                                print("\(option.title) is a favourite: \(isFavourite)")
+//                            } label: {
+//                                Label("DEBUG: Favourite", systemImage: "heart")
+//                            }
+//                            .tint(.red)
                             
                             Button {
                                 print("more")
