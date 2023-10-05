@@ -22,6 +22,8 @@
 		381BACF62ACF0D2300DCF247 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACF52ACF0D2300DCF247 /* SettingsView.swift */; };
 		381BACF82ACF18F700DCF247 /* QuickConvertSwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACF72ACF18F700DCF247 /* QuickConvertSwipeActions.swift */; };
 		381BACFA2ACF266000DCF247 /* SettingsOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACF92ACF266000DCF247 /* SettingsOptionViewModel.swift */; };
+		381BACFC2ACF30F900DCF247 /* ConvertionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACFB2ACF30F900DCF247 /* ConvertionListViewModel.swift */; };
+		381BACFE2ACF335B00DCF247 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACFD2ACF335B00DCF247 /* IGTextFieldModifier.swift */; };
 		386E011E2ACBD5C400A73C53 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E011D2ACBD5C400A73C53 /* SearchViewModel.swift */; };
 		386E01222ACBD8E900A73C53 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 386E01212ACBD8E900A73C53 /* Documentation.docc */; };
 		387D2A552AC9FFD8001EDC53 /* QuickConvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D2A542AC9FFD8001EDC53 /* QuickConvertApp.swift */; };
@@ -78,6 +80,8 @@
 		381BACF52ACF0D2300DCF247 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		381BACF72ACF18F700DCF247 /* QuickConvertSwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickConvertSwipeActions.swift; sourceTree = "<group>"; };
 		381BACF92ACF266000DCF247 /* SettingsOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionViewModel.swift; sourceTree = "<group>"; };
+		381BACFB2ACF30F900DCF247 /* ConvertionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertionListViewModel.swift; sourceTree = "<group>"; };
+		381BACFD2ACF335B00DCF247 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		386E011D2ACBD5C400A73C53 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		386E01212ACBD8E900A73C53 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		387D2A512AC9FFD8001EDC53 /* QuickConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				381BACF72ACF18F700DCF247 /* QuickConvertSwipeActions.swift */,
+				381BACFD2ACF335B00DCF247 /* IGTextFieldModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				38143E552ACDD55900F6FC71 /* ConvertionFormViewModel.swift */,
+				381BACFB2ACF30F900DCF247 /* ConvertionListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -487,6 +493,8 @@
 				38143E5B2ACDDB6700F6FC71 /* DeveloperCategoryView.swift in Sources */,
 				387D2A552AC9FFD8001EDC53 /* QuickConvertApp.swift in Sources */,
 				38143E542ACDD53C00F6FC71 /* ConvertionFormView.swift in Sources */,
+				381BACFC2ACF30F900DCF247 /* ConvertionListViewModel.swift in Sources */,
+				381BACFE2ACF335B00DCF247 /* IGTextFieldModifier.swift in Sources */,
 				381BACFA2ACF266000DCF247 /* SettingsOptionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
