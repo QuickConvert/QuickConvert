@@ -11,8 +11,8 @@ import SwiftUI
 /// The list is differentiated by two topics -> 1. Basic operations, 2. advanced operations
 ///
 /// TODO:
-/// - The list items should be clickable
-/// - They should have actions: Favourite, unfavourite -> `@State private var isFavourite: Bool = false`
+/// - The list items should be clickable ❌
+/// - They should have actions: Favourite, unfavourite -> `@State private var isFavourite: Bool = false` ✅
 ///
 /// The List Items are defined in the ListViewModel as an enum called `ListViewModel`.
 struct CategoryView: View {
