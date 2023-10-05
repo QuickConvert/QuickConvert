@@ -16,7 +16,7 @@ struct FavouriteView: View {
                     .foregroundColor(.blue)
             }
             .navigationTitle("Favourite")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 }
