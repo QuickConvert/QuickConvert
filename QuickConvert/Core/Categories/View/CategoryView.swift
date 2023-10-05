@@ -13,6 +13,7 @@ import SwiftUI
 /// **TODO:**
 /// - The list items should be clickable ❌
 /// - They should have actions: Favourite, unfavourite -> `@State private var isFavourite: Bool = false` ✅
+/// - Fix is Favourite action
 ///
 /// The List Items are defined in the ListViewModel as an enum called `ListViewModel`.
 struct CategoryView: View {
@@ -53,14 +54,14 @@ struct CategoryView: View {
                             /// Allows using swipe actions:
                             /// Favourite/unfavourite: right edge
                             /// ...
-//                            Button {
-//                                isFavourite.toggle()
-//                                print("DEBUG: added \(option.title) to your favourites")
-//                                print("\(option.title) is a favourite: \(isFavourite)")
-//                            } label: {
-//                                Label("DEBUG: Favourite", systemImage: "heart")
-//                            }
-//                            .tint(.red)
+                            Button {
+                                isFavourite.toggle()
+                                print("DEBUG: added \(option.title) to your favourites")
+                                print("\(option.title) is a favourite: \(isFavourite)")
+                            } label: {
+                                Label("Favourite", systemImage: isFavourite ? "heart.slash" : "heart.fill")
+                            }
+                            .tint(.red)
                             
                             Button {
                                 print("more")
@@ -75,7 +76,7 @@ struct CategoryView: View {
                 }
                 
                 Section("Advanced operations") {
-                    ForEach(ListViewModel_Advanced.allCases) { option in
+                    ForEach(ListViewModel.allCases) { option in
                         HStack {
                             Image(systemName: option.imageName)
                                 .resizable()
