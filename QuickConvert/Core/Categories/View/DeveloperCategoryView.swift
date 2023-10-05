@@ -35,7 +35,6 @@ struct DeveloperCategoryView: View {
                                     .frame(alignment: .leading)
                                     .font(.caption)
                                     .fontWeight(.semibold)
-                                    .offset()
                             }
                         }
                     }

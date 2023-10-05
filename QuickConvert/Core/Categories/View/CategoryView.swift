@@ -19,6 +19,7 @@ struct CategoryView: View {
     /// State proprtties that keeps track of the current state of what is displayed
     @State private var developerIsPresented = false
     @State private var convertionView = false
+    @State private var settingsViewIsShown = false
     var body: some View {
         NavigationStack {
             List {
@@ -75,7 +76,7 @@ struct CategoryView: View {
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                             
-                            // MARK: Custom Chevron button
+                            // MARK: - Custom Chevron button
                             Spacer()
                             
                             Image(systemName: "chevron.right")
@@ -92,6 +93,26 @@ struct CategoryView: View {
             }
             .navigationTitle("Categories")
             .navigationBarTitleDisplayMode(.automatic)
+            
+            // MARK: - Toolbar
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                        Image(systemName: "gear")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25)
+                    .tint(.black)
+                    
+                    .onTapGesture(perform: {
+                        settingsViewIsShown.toggle()
+                    })
+                    .sheet(isPresented: $settingsViewIsShown) {
+                        SettingsView()
+                            .presentationDragIndicator(.visible)
+                            .interactiveDismissDisabled(false)
+                    }
+                }
+            }
         }
     }
 }

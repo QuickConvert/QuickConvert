@@ -48,19 +48,6 @@ struct QuickConvertTabView: View {
                 .tag(2)
             }
         .tint(.black) // changes the TabBar Buttons color to black
-        
-//        // MARK: - Sheet View above TabBar
-//        /// A sheet view above the TabBar
-//        Text("Tab 2")
-//            .onTapGesture {
-//                // When the second tab is tapped, present a sheet
-//                isSheetPresented.toggle()
-//            }
-//            .sheet(isPresented: $isSheetPresented) {
-//                QuickConvertSheetView()
-//                    .presentationDragIndicator(.visible)
-//                    .interactiveDismissDisabled(false)
-//            }
     }
 }
 
