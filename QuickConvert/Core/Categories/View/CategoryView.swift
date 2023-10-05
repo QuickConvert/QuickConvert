@@ -16,7 +16,9 @@ import SwiftUI
 ///
 /// The List Items are defined in the ListViewModel as an enum called `ListViewModel`.
 struct CategoryView: View {
+    /// State proprtties that keeps track of the current state of what is displayed
     @State private var developerIsPresented = false
+    @State private var convertionView = false
     var body: some View {
         NavigationStack {
             List {
@@ -47,6 +49,12 @@ struct CategoryView: View {
                             Text(option.title)
                                 .font(.subheadline)
                         }
+//                        .onTapGesture(perform: {
+//                            convertionView.toggle()
+//                        })
+//                        .navigationDestination(isPresented: $convertionView) {
+//                            ConvertionView()
+//                        }
                     }
                 }
                 Section("Developer") {

@@ -46,26 +46,25 @@ struct QuickConvertTabView: View {
                 }
                 .onAppear { selectedTab = 2 }
                 .tag(2)
-            
-            // MARK: - Sheet View above TabBar
-            /// A sheet view above the TabBar
-//            Text("Tab 2")
-//                .tabItem {
-//                    Image(systemName: "2.circle")
-//                    Text("Tab 2")
-//                }
-//                .onTapGesture {
-//                    // When the second tab is tapped, present a sheet
-//                    isSheetPresented.toggle()
-//                }
-//                .sheet(isPresented: $isSheetPresented) {
-//                    // Content of the sheet
-//                }
-        }
+            }
         .tint(.black) // changes the TabBar Buttons color to black
+        
+//        // MARK: - Sheet View above TabBar
+//        /// A sheet view above the TabBar
+//        Text("Tab 2")
+//            .onTapGesture {
+//                // When the second tab is tapped, present a sheet
+//                isSheetPresented.toggle()
+//            }
+//            .sheet(isPresented: $isSheetPresented) {
+//                QuickConvertSheetView()
+//                    .presentationDragIndicator(.visible)
+//                    .interactiveDismissDisabled(false)
+//            }
     }
 }
 
 #Preview {
     QuickConvertTabView()
 }
+
