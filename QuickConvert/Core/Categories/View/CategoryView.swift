@@ -46,7 +46,7 @@ struct CategoryView: View {
                                 Image(systemName: "")
                             }
                         }
-                        .swipeActions {
+                        .swipeActions(edge: .trailing) {
                             /// Allows using swipe actions:
                             /// Favourite/unfavourite: right edge
                             /// ...
