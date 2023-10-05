@@ -21,6 +21,7 @@
 		381B5EAF2ACB40F600AE0E19 /* QuickConvertWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 381B5E9B2ACB40F400AE0E19 /* QuickConvertWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		381BACF62ACF0D2300DCF247 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACF52ACF0D2300DCF247 /* SettingsView.swift */; };
 		381BACF82ACF18F700DCF247 /* QuickConvertSwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACF72ACF18F700DCF247 /* QuickConvertSwipeActions.swift */; };
+		381BACFA2ACF266000DCF247 /* SettingsOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BACF92ACF266000DCF247 /* SettingsOptionViewModel.swift */; };
 		386E011E2ACBD5C400A73C53 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E011D2ACBD5C400A73C53 /* SearchViewModel.swift */; };
 		386E01222ACBD8E900A73C53 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 386E01212ACBD8E900A73C53 /* Documentation.docc */; };
 		387D2A552AC9FFD8001EDC53 /* QuickConvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D2A542AC9FFD8001EDC53 /* QuickConvertApp.swift */; };
@@ -76,6 +77,7 @@
 		381B5EAC2ACB40F600AE0E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381BACF52ACF0D2300DCF247 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		381BACF72ACF18F700DCF247 /* QuickConvertSwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickConvertSwipeActions.swift; sourceTree = "<group>"; };
+		381BACF92ACF266000DCF247 /* SettingsOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionViewModel.swift; sourceTree = "<group>"; };
 		386E011D2ACBD5C400A73C53 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		386E01212ACBD8E900A73C53 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		387D2A512AC9FFD8001EDC53 /* QuickConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 		381BACF32ACF0D1200DCF247 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				381BACF92ACF266000DCF247 /* SettingsOptionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				38143E5B2ACDDB6700F6FC71 /* DeveloperCategoryView.swift in Sources */,
 				387D2A552AC9FFD8001EDC53 /* QuickConvertApp.swift in Sources */,
 				38143E542ACDD53C00F6FC71 /* ConvertionFormView.swift in Sources */,
+				381BACFA2ACF266000DCF247 /* SettingsOptionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

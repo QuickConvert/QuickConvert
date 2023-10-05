@@ -88,7 +88,7 @@ struct CategoryView: View {
                 }
                 
                 Section("Advanced operations") {
-                    ForEach(ListViewModel.allCases) { option in
+                    ForEach(ListViewModel_Advanced.allCases) { option in
                         HStack {
                             Image(systemName: option.imageName)
                                 .resizable()
