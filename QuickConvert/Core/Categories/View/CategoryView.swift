@@ -12,7 +12,7 @@ import SwiftUI
 ///
 /// TODO:
 /// - The list items should be clickable
-/// - They should have actions: Favourite, unfavourite
+/// - They should have actions: Favourite, unfavourite -> `@State private var isFavourite: Bool = false`
 ///
 /// The List Items are defined in the ListViewModel as an enum called `ListViewModel`.
 struct CategoryView: View {
@@ -20,11 +20,12 @@ struct CategoryView: View {
     @State private var developerIsPresented = false
     @State private var convertionView = false
     @State private var settingsViewIsShown = false
+    @State private var isFavourite = false
     var body: some View {
         NavigationStack {
             List {
                 Section("Basic operations") {
-                    ForEach(ListViewModel.allCases) { option in
+                    ForEach(ListViewModel.allCases, id: \.self) { option in
                         HStack {
                             Image(systemName: option.imageName)
                                 .resizable()
@@ -34,6 +35,38 @@ struct CategoryView: View {
                             
                             Text(option.title)
                                 .font(.subheadline)
+                            
+                            Spacer()
+                            
+                            // TODO: Fix issue
+                            #warning("BUG: If you mark an item with favourite all items are selected")
+                            if isFavourite == true {
+                                Image(systemName: "heart.fill")
+                            } else {
+                                Image(systemName: "")
+                            }
+                        }
+                        .swipeActions {
+                            /// Allows using swipe actions:
+                            /// Favourite/unfavourite: right edge
+                            /// ...
+                            Button {
+                                isFavourite.toggle()
+                                print("DEBUG: added \(option.title) to your favourites")
+                                print("\(option.title) is a favourite: \(isFavourite)")
+                            } label: {
+                                Label("DEBUG: Favourite", systemImage: "heart")
+                            }
+                            .tint(.red)
+                            
+                            Button {
+                                print("more")
+                            } label: {
+                                Label("More", systemImage: "ellipsis")
+                                    .symbolVariant(.circle.fill)
+                            }
+                            .tint(Color(.systemGray2))
+                            
                         }
                     }
                 }
