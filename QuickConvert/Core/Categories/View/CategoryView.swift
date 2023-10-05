@@ -10,7 +10,7 @@ import SwiftUI
 /// A List that shows all the categories:
 /// The list is differentiated by two topics -> 1. Basic operations, 2. advanced operations
 ///
-/// TODO:
+/// **TODO:**
 /// - The list items should be clickable ❌
 /// - They should have actions: Favourite, unfavourite -> `@State private var isFavourite: Bool = false` ✅
 ///
