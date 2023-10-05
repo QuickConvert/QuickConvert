@@ -13,7 +13,7 @@ import SwiftUI
 /// **TODO:**
 /// - The list items should be clickable ❌
 /// - They should have actions: Favourite, unfavourite -> `@State private var isFavourite: Bool = false` ✅
-/// - Fix is Favourite action
+/// - Fix is Favourite action ⚠️
 ///
 /// The List Items are defined in the ListViewModel as an enum called `ListViewModel`.
 struct CategoryView: View {
@@ -99,12 +99,7 @@ struct CategoryView: View {
                             Text(option.title)
                                 .font(.subheadline)
                         }
-//                        .onTapGesture(perform: {
-//                            convertionView.toggle()
-//                        })
-//                        .navigationDestination(isPresented: $convertionView) {
-//                            ConvertionView()
-//                        }
+                        // TODO: Create .sheet or link it to the convertion view
                     }
                 }
                 Section("Developer") {
