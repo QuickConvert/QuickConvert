@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+/// A View that is responible for the convertion
+///
+/// TODO:
+/// - Add a little magic 🪄
+/// 
 struct ConvertionFormView: View {
     var body: some View {
         NavigationStack {
