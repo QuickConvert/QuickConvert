@@ -9,7 +9,16 @@ import SwiftUI
 
 struct ConvertionFormView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Text("Hello, World")
+                Image(systemName: "gear")
+                    .foregroundColor(.blue)
+            }
+            
+            .navigationTitle("Convertion")
+            .navigationBarTitleDisplayMode(.automatic)
+        }
     }
 }
 
