@@ -41,12 +41,12 @@ struct CategoryView: View {
                             Spacer()
                             
                             // FIXME: Feature func
-//                            Button {
-//                                isFavourite.toggle()
-//                            } label: {
-//                                Image(systemName: isFavourite ? "heart.fill" : "heart")
-//                            }
-//                            .tint(.black)
+                            Button {
+                                isFavourite.toggle()
+                            } label: {
+                                Image(systemName: isFavourite ? "heart.fill" : "heart")
+                            }
+                            .tint(.black)
                             
                         }
                         

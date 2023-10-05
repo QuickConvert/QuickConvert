@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 // MARK: - Basic Operations
-enum ListViewModel: Int, CaseIterable, Identifiable {
+enum ListViewModel: Int, CaseIterable, Identifiable, Hashable, Codable {
     case length
     case temperature
     case area
@@ -45,7 +45,7 @@ enum ListViewModel: Int, CaseIterable, Identifiable {
 }
 
 // MARK: - Advanced operations
-enum ListViewModel_Advanced: Int, CaseIterable, Identifiable {
+enum ListViewModel_Advanced: Int, CaseIterable, Identifiable, Hashable, Codable {
     case trigonometry
     case electrical // electrical stuff like ohm, V, w, ...
     case energy
@@ -96,7 +96,7 @@ enum ListViewModel_Advanced: Int, CaseIterable, Identifiable {
 }
 
 // MARK: - Programmer List Icon
-enum ListViewModel_Icon_Programmer: Int, CaseIterable, Identifiable {
+enum ListViewModel_Icon_Programmer: Int, CaseIterable, Identifiable, Hashable, Codable {
     case developer
     
     var title: String {
