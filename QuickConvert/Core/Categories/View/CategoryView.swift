@@ -25,9 +25,9 @@ struct CategoryView: View {
     var body: some View {
         NavigationStack {
             List {
-                #warning("Fix id's of the items")
+//                #warning("Fix id's of the items")
                 Section("Basic operations") {
-                    ForEach(ListViewModel.allCases, id: \.self) { option in
+                    ForEach(ListViewModel.allCases) { option in
                         HStack {
                             Image(systemName: option.imageName)
                                 .resizable()

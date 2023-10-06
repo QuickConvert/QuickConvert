@@ -78,3 +78,7 @@ struct CategoryViewModel: Hashable, Identifiable { // codable protocol
         }
     }
 }
+
+final class ModelData: ObservableObject {
+//    @Published var categories_basic: [Category] = CategoryViewModel.Category_Basic
+}
