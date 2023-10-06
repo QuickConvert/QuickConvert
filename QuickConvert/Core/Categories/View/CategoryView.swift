@@ -21,6 +21,7 @@ struct CategoryView: View {
     @State private var developerIsPresented = false
     @State private var convertionView = false
     @State private var settingsViewIsShown = false
+    @State private var moreSheetIsShown = false
     @State private var isFavourite = false
     var body: some View {
         NavigationStack {
@@ -66,10 +67,18 @@ struct CategoryView: View {
                             
                             Button {
                                 print("more")
+//                                moreSheetIsShown.toggle()
                             } label: {
                                 Label("More", systemImage: "ellipsis")
                                     .symbolVariant(.circle.fill)
                             }
+//                            .onTapGesture(perform: {
+//                                moreSheetIsShown.toggle()
+//                            })
+//                            .sheet(isPresented: $moreSheetIsShown) {
+//                                MoreView()
+//                            }
+                            
                             .tint(Color(.systemGray2))
                             
                         }
